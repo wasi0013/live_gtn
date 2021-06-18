@@ -1,5 +1,7 @@
 ![Live View - Guess The Number](/live_gtn.gif)
 
+**Demo**: https://live-gtn.herokuapp.com/
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
