@@ -1,4 +1,5 @@
-# LiveGtn
+# Live View - Guess The Number
+![](/live_gtn.gif)
 
 To start your Phoenix server:
 
