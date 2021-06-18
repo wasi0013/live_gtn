@@ -4,7 +4,7 @@ defmodule LiveGtnWeb.PageLive do
   @impl true
   def mount(_params, _session, socket) do
     {:ok, assign(socket,
-        score: 1000,
+        score: 100,
         number:  "????",
         answer: "#{Enum.random(1000..9999)}",
         message: "Make a Guess!"
@@ -40,7 +40,7 @@ defmodule LiveGtnWeb.PageLive do
   @impl true
   def handle_event("reset", %{"value" => ""}, socket) do
     {:noreply, assign(socket,
-        score: 0,
+        score: 100,
         number: "????",
         answer: "#{Enum.random(1000..9999)}",
         message: "Make a Guess!"
