@@ -1,1 +1,18 @@
-<h1 style="font-size: 2em; text-align:center;"> SCORE: <%= @score %> </h1>
+<div class="container">
+   <div class="row">
+          <div class="column">
+                <h1 class="score-title"> SCORE</h1>
+                <h1 class= "score-text"> <%= @score %></h1>
+                <h1 class="number-text"> Number</h1>
+                <h1 class="number-text"> <%= @number %></h1>
+          </div>
+  </div>
+  </div>
+  <div class="clearfix" style="margin:1%;"></div>
+  <div class="container">
+  <div class="row">
+          <div class="column">
+                  <button phx-click="reset"> Reset</button>
+          </div>
+  </div>
+  </div>
