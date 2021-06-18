@@ -5,6 +5,7 @@
                 <h1 class= "score-text"> <%= @score %></h1>
                 <h1 class="number-text"> Number</h1>
                 <h1 class="number-text"> <%= @number %></h1>
+
           </div>
   </div>
   </div>
@@ -12,6 +13,11 @@
   <div class="container">
   <div class="row">
           <div class="column">
+                                   <form phx-submit="guess">
+                                                <label class="blink" style="font-size:1.5em;"><%= @message %></label>
+                                                 <input type="text" inputmode="numeric" pattern="[0-9]*" name="number">
+                                                 <button class = "button button-outline"  type="submit">go!</button>
+                                    </form>
                   <button phx-click="reset"> Reset</button>
           </div>
   </div>
